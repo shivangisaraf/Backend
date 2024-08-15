@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background:radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);/* Gradient background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-page {
+            background:radial-gradient(circle, rgba(174,238,218,1) 55%, rgba(148,225,233,1) 65%);/* Semi-transparent white */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .user-pass input[type="text"],
+        .user-pass input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .user-pass input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #2535f5;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .user-pass input[type="submit"]:hover {
+            background-color: radial-gradient(circle, rgba(174,238,218,1) 55%, rgba(68,185,200,1) 65%);;
+        }
+
+        a {
+            display: block;
+            margin-top: 15px;
+            color: radial-gradient(circle, rgba(174,238,218,1) 55%, rgba(68,200,120,1) 65%);;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+   <div class="login-page">
+       <h2>Sign Up</h2>
+       <div class="user-pass">
+           <form action="/signup" method="post">
+               <div>
+                   <input type="text" name="name" placeholder="Name">
+               </div>
+               <div>
+                   <input type="password" name="password" placeholder="Password">
+               </div> 
+               <div>
+                   <input type="submit" value="Login">
+               </div>
+               <a href="/">Already have an account,<br>Try to login here</a>
+           </form>
+       </div>
+   </div>
+</body>
+</html>
