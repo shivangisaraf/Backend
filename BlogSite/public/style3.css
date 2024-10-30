@@ -1,0 +1,102 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Centering Content */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e3f2fd;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+/* Main Heading */
+h1 {
+  color: #1565c0;
+  font-size: 2rem;
+  margin: 15px 0; /* Space below heading */
+  text-align: center;
+}
+
+/* Subheading for Post Author */
+h2 {
+  color: #424242;
+  font-size: 1.2rem;
+  margin: 5px 0 20px; /* Space below the subheading */
+  text-align: center;
+}
+
+/* Centered Form */
+form {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 85%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Textarea Styling */
+textarea.text {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0 20px;
+  border-radius: 8px;
+  border: 1px solid #90caf9;
+  background-color: #e3f2fd;
+  font-size: 1rem;
+  color: #1565c0;
+  resize: vertical;
+}
+
+textarea.text::placeholder {
+  color: #64b5f6;
+}
+
+/* Button Styling */
+.btn {
+  padding: 15px;
+  background-color: #1565c0;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0d47a1;
+}
+
+/* Focus States */
+textarea.text:focus {
+  outline: none;
+  border-color: #42a5f5;
+  background-color: #bbdefb;
+  box-shadow: 0 0 5px rgba(66, 165, 245, 0.5);
+}
+
+.button {
+  background-color: #007BFF; /* Bootstrap primary blue */
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  padding: 8px 12px; /* Smaller padding for a smaller button */
+  font-size: 14px; /* Smaller font size */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
